@@ -1,5 +1,4 @@
 import React from 'react';
-import photo from '../../Assets/photos/IMG_9419.jpg';
 import './Projects.css';
 
 export const Projects = () => {
