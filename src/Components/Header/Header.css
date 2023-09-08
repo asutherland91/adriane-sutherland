@@ -24,7 +24,7 @@ header {
 
 .header-text {
   text-decoration: none;
-  color: rgb(251, 109, 204);
+  color: rgb(228, 10, 156);
   font-weight: 600;
   margin:.25em;
   cursor: pointer;
@@ -41,10 +41,10 @@ header {
 }
 
 .dark .header-text, .dark .decorative-line {
-  color: rgb(255, 211, 240);
+  color: rgb(247, 125, 206);
 }
 
 .dark .header-text:hover {
-  color: rgb(255, 133, 214);
+  color: rgb(247, 125, 206);
   text-decoration: underline rgb(255, 133, 214);
 }

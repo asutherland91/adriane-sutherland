@@ -2,9 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .about-text-wrapper {
   width:40%;
   word-wrap: normal;
+}
+
+.about-header {
+  color:rgb(228, 10, 156);
+}
+
+.about-text {
+  font-size: 1.2em;
+  color:rgb(228, 10, 156);
+}
+
+.dark .about-text, .dark .about-header  {
+  color:rgb(247, 125, 206);
 }

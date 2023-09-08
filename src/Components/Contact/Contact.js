@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <div className="contact-wrapper">
       <div class="contact-text-wrapper">
-        <h1 className="contact-header">Let's Connect! </h1>
+        <h4 className="contact-header">Let's Connect! </h4>
       </div>
       <div className="icon-wrapper">
         <a className="icon-anchor" href="mailto:asutherland91@gmail.com">

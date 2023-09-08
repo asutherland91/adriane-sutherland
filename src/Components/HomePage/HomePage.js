@@ -1,8 +1,6 @@
 import React from 'react';
-import { DarkModeToggle } from '../DarkModeToggle/DarkModeToggle';
 import photo from '../../Assets/photos/IMG_9419.jpg';
 import './HomePage.css';
-
 
 export const HomePage = () => {
   return (
@@ -12,11 +10,14 @@ export const HomePage = () => {
         <h3 class="animate-character"> Adriane Sutherland</h3>
       </div>
       <div className="home-content-wrapper">
-        <img className="home-image" src={photo} alt="artistic portrait of Adriane" />
+        <img
+          className="home-image"
+          src={photo}
+          alt="artistic portrait of Adriane"
+        />
         <p className="home-text-section">
-          I am a front-end software devloper who really loves making things
-          prettier. I don't really know what else to put here but I really need
-          some test words so blah blah I should have got some lorem ipsum{' '}
+          Welcome to my portfolio! I am a front-end software developer who
+          really takes joy in making all the things around me more beautiful.
         </p>
       </div>
     </div>

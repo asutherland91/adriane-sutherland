@@ -22,7 +22,7 @@
     circle,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0) 50%,
-    #fface1 50%
+    rgb(247, 125, 206) 50%
   );
 }
 .sun:before {
@@ -33,10 +33,10 @@
   height: 100%;
   background: radial-gradient(
     circle,
-    #fface1 30%,
+    rgb(247, 125, 206) 30%,
     rgba(0, 0, 0, 0) 31%,
     rgba(0, 0, 0, 0) 50%,
-    #fface1 50%
+    rgb(247, 125, 206) 50%
   );
   transform: rotate(45deg);
 }
