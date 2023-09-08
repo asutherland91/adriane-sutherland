@@ -1,0 +1,10 @@
+.about-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text-wrapper {
+  width:40%;
+  word-wrap: normal;
+}

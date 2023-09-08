@@ -13,7 +13,7 @@ body.dark {
   background-color: black;
   background-image: linear-gradient(
     to bottom,
-    rgba(96, 3, 74, 0.704),
+    rgba(165, 4, 128, 0.704),
     rgba(15, 0, 13, 0.562)
   ), url("../../Assets/photos/darkmode.jpg");
   background-size: stretch;
@@ -24,4 +24,5 @@ body.dark {
 .page-wrapper {
   backdrop-filter: blur(4px);
   height: 100vh;
+  position: relative;
 }

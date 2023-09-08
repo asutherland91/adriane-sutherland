@@ -1,32 +1,37 @@
-.title-wrapper {
+.home-title-wrapper {
   display: flex;
   align-items: baseline;
   flex-direction: row;
+  margin-left: 7em;
 }
 
-.content-wrapper {
+.home-content-wrapper {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4em;
 }
 
-.image {
+.home-image {
   border-radius: 100%;
   height:20em;
   margin-right: 3em;
 }
 
-.welcome {
-  color: pink;
+.home-welcome {
+  color: rgb(247, 125, 206);
   font-family: cursive;
-  margin-right: .25em;
+  margin: 0 .25em;
 }
 
-.text-section {
-  width: 50%;
+.home-text-section {
+  width: 35%;
+  font-size: 1.05em;
 }
 
 .animate-character {
+  margin-left: 10em;
   font-size: 2.75em;
   font-family:cursive;
   --bg-size: 400%;
@@ -49,7 +54,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .animate-character {
-    animation: move-bg 30s linear infinite;
+    animation: move-bg 18s linear infinite;
   }
   @keyframes move-bg {
     to {
@@ -58,6 +63,6 @@
   }
 }
 
-.dark .text-section {
-  color: white;
+.dark .home-text-section, .dark .home-welcome {
+  color: rgb(255, 171, 227);
 }
