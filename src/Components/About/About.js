@@ -9,7 +9,7 @@ export const About = () => {
       <div className="about-text-wrapper">
         <p className="about-text">
           Hello there! My name is Adriane Sutherland. I'm an eager recent
-          graduate of the highly respected Turing School of Software and
+          graduate of the renowned Turing School of Software and
           Design's front end engineering program. I'm absolutely passionate
           about creating intuitive user experiences and visually appealing
           interfaces. UI/UX design is an endless journey of discovery for me,
@@ -17,7 +17,7 @@ export const About = () => {
         </p>
         <p className="about-text">
           Before studying at Turing, I earned my Bachelor's degree in Japanese
-          from the renowned University of Washington. I'm a diligent, devoted
+          from the highly respected University of Washington. I'm a diligent, devoted
           learner who derives great satisfaction from expanding my knowledge. My
           solid work ethic and genuine excitement for constant growth make me an
           asset to any development team.

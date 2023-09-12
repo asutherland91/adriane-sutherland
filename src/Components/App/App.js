@@ -16,10 +16,6 @@ const App = () => {
           <HomePage />
           <Contact />
         </Route>
-        {/* <Route exact path="/contact">
-          <Header />
-          <Contact />
-        </Route> */}
         <Route exact path="/about">
           <Header />
           <About />
@@ -37,6 +33,10 @@ const App = () => {
     //     <Redirect to="/error" />
     //   </Route>
     // </Switch>
+    /* <Route exact path="/contact">
+          <Header />
+          <Contact />
+        </Route> */
   );
 };
 
