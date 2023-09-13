@@ -1,16 +1,47 @@
 import React, { useState } from 'react';
 import { HomePage } from '../HomePage/HomePage';
-import { Header } from '../Header/Header';
+import { PageHeader } from '../PageHeader/PageHeader';
 import { Contact } from '../Contact/Contact';
 import { About } from '../About/About';
 import { Projects } from '../Projects/Projects';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { FunAbout } from '../FunAbout/FunAbout';
+import Modal from "react-modal";
+// import { Route, Switch, Redirect } from 'react-router-dom';
+import {SectionsContainer, Section, Header, Footer} from 'react-fullpage'
 import './App.css';
 
+Modal.setAppElement('#root');
+
 const App = () => {
+  const options = {
+    sectionClassName: 'section',
+    anchors: ['homepage', 'about', 'projects', 'funabout'],
+    scrollBar: false,
+  };
+
   return (
-    <div className="page-wrapper">
-      <Switch>
+     <div className="page-wrapper">
+      <Header>
+      <PageHeader />
+      </Header>
+      <SectionsContainer {...options}>
+        <Section>
+          <HomePage />
+        </Section>
+        <Section>
+          <About />
+          <Contact />
+        </Section>
+        <Section>
+          <Projects />
+          <Contact />
+        </Section>
+        <Section>
+          <FunAbout />
+          <Contact />
+        </Section>
+      </SectionsContainer>
+      {/* <Switch>
         <Route exact path="/">
           <Header />
           <HomePage />
@@ -26,7 +57,7 @@ const App = () => {
           <Projects />
           <Contact />
         </Route>
-      </Switch>
+      </Switch> */}
     </div>
     // <Switch>
     //   <Route path="*">

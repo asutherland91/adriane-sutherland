@@ -3,20 +3,33 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 8em;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-text-wrapper {
-  width:40%;
+  width:35%;
   word-wrap: normal;
 }
 
 .about-header {
   color:rgb(228, 10, 156);
+  margin-top: 4em;
 }
 
 .about-text {
   font-size: 1.2em;
   color:rgb(228, 10, 156);
+}
+
+.about-image {
+  height: 20em;
+  margin-right: 8em;
 }
 
 .dark .about-text, .dark .about-header  {

@@ -1,25 +1,22 @@
 import React from 'react';
 import photo from '../../Assets/photos/IMG_9419.jpg';
+import artsy from '../../Assets/photos/IMG_9811.png';
 import './HomePage.css';
 
 export const HomePage = () => {
   return (
     <div className="home-page-wrapper">
       <div class="home-title-wrapper">
-        <h1 className="home-welcome">Hello my name is </h1>
-        <h3 class="animate-character"> Adriane Sutherland</h3>
+        <h1 className="home-welcome">Hello there! I am </h1>
+        <span class="animate-character"> Adriane Sutherland</span>
       </div>
-      <div className="home-content-wrapper">
-        <img
-          className="home-image"
-          src={photo}
+      <div className="landing-wrapper">
+            <img
+          className="landing-image"
+          src={artsy}
           alt="artistic portrait of Adriane"
         />
-        <p className="home-text-section">
-          Welcome to my portfolio! I am a front-end software developer who
-          really takes joy in making all the things around me more beautiful.
-        </p>
-      </div>
+          </div>
     </div>
   );
 };

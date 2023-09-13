@@ -1,0 +1,44 @@
+.display-image {
+height: 14em;
+box-shadow: -25px -25px 0px 0px rgb(228, 10, 156);
+}
+
+
+
+.project-content-wrapper {
+margin-left: 3em;
+display: flex;
+justify-content: space-around;
+}
+
+.project-header {
+  text-align: center;
+  margin-top: 3.5em;
+  color: rgb(228, 10, 156)
+}
+
+
+.app-name {
+margin-bottom: 2em;
+color: rgb(228, 10, 156)
+}
+
+
+.dark .display-image {
+box-shadow: -25px -25px 0px 0px rgb(247, 125, 206);
+}
+
+.modal-button {
+  border: none;
+  background-color: rgb(228, 10, 156);
+  color: white;
+  border-radius: 3px;
+}
+
+.dark .app-name, .dark .project-header {
+color: rgb(247, 125, 206);
+}
+
+.tic-tac-toe {
+  text-decoration: none;
+}
