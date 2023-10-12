@@ -27,6 +27,7 @@
 
 .icons:hover {
   box-shadow: 0 0 15px 7px  rgb(255, 149, 216);
+  transition: all .2s ease-in-out;
 }
 
 
