@@ -1,5 +1,5 @@
 .icons {
-  height: 3em;
+  height: 2.5em;
   border-radius: 50%;
 }
 
@@ -13,6 +13,7 @@
   align-items:center;
   justify-content: center;
   flex-direction: column;
+  /* height: 5vh; */
   left: 50%;
   right:50%;
 }
@@ -22,7 +23,7 @@
   font-style: italic;
   font-size: 1em;
   width: max-content;
-  margin: 2em 0em 0em 0em
+  margin: 0em
 }
 
 .icons:hover {
