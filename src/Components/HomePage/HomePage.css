@@ -6,11 +6,11 @@
 }
 
 .home-page-wrapper {
-  height: 100%;
+  height: 82vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4em;
+  margin-top: 0em;
 }
 
 .home-image {
@@ -60,13 +60,14 @@
 }
 
 .landing-wrapper {
-  height: 100vh;
+  height: 32em;
   display: flex;
-  margin-top: 22em;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-image {
-  height: 60%;
+  height: 32em;
   transform: rotate(270deg);
 }
 
