@@ -440,7 +440,3 @@ export const Projects = () => {
   );
 };
 
-function disableFullpage() {
-  fullpage_api.setAllowScrolling(false);
-  fullpage_api.setKeyboardScrolling(false);
-}
