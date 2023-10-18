@@ -13,7 +13,6 @@
   align-items:center;
   justify-content: center;
   flex-direction: column;
-  /* height: 5vh; */
   left: 50%;
   right:50%;
 }
