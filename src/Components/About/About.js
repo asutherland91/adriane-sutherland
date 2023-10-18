@@ -14,9 +14,9 @@ export const About = () => {
             />
         <div className="about-text-wrapper">
           <p className="about-text">
-            Hello there! My name is Adriane Sutherland. I'm an eager recent
-            graduate of the renowned Turing School of Software and Design's
-            front end engineering program. I'm absolutely passionate about
+            Hello there! My name is Adriane Sutherland. I'm a recent
+            graduate of Turing School of Software and Design's
+            front end software development program. I'm absolutely passionate about
             creating intuitive user experiences and visually appealing
             interfaces. UI/UX design is an endless journey of discovery for me,
             and I'm always seeking out new ways to refine my skills.
