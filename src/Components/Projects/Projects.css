@@ -2,6 +2,11 @@
 height: 14em;
 box-shadow: -25px -25px 0px 0px rgb(228, 10, 156);
 cursor: pointer;
+margin-bottom: 2em;
+}
+
+.project-page-wrapper {
+  height: 100vh;
 }
 
 .display-image:hover {
@@ -13,11 +18,11 @@ cursor: pointer;
 margin-left: 3em;
 display: flex;
 justify-content: space-around;
+align-items: center;
 }
 
 .project-header {
   text-align: center;
-  margin-top: 3.5em;
   color: rgb(228, 10, 156)
 }
 
@@ -87,4 +92,8 @@ color: rgb(247, 125, 206);
   padding: .25em;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.project-right, .project-left {
+  margin-bottom: 1.5em;
 }
