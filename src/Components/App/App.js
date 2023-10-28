@@ -1,42 +1,40 @@
 import React, { useState } from 'react';
 import { HomePage } from '../HomePage/HomePage';
-import { Header } from '../Header/Header';
+import { PageHeader } from '../PageHeader/PageHeader';
 import { Contact } from '../Contact/Contact';
 import { About } from '../About/About';
 import { Projects } from '../Projects/Projects';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { FunAbout } from '../FunAbout/FunAbout';
+import Modal from 'react-modal';
 import './App.css';
 
+Modal.setAppElement('#root');
+
 const App = () => {
+
   return (
-    <div className="page-wrapper">
-      <Switch>
-        <Route exact path="/">
-          <Header />
-          <HomePage />
-          <Contact />
-        </Route>
-        {/* <Route exact path="/contact">
-          <Header />
-          <Contact />
-        </Route> */}
-        <Route exact path="/about">
-          <Header />
-          <About />
-          <Contact />
-        </Route>
-        <Route exact path="/projects">
-          <Header />
-          <Projects />
-          <Contact />
-        </Route>
-      </Switch>
-    </div>
-    // <Switch>
-    //   <Route path="*">
-    //     <Redirect to="/error" />
-    //   </Route>
-    // </Switch>
+    <>
+      <div className="section" data-anchor="home">
+        <PageHeader />
+        <HomePage />
+        <Contact />
+      </div>
+      <div className="section" data-anchor="about">
+        <PageHeader />
+        <About />
+        <Contact />
+      </div>
+      <div className="section" data-anchor="projects">
+        <PageHeader />
+        <Projects />
+        <Contact />
+      </div>
+      <div className="section" data-anchor="fun">
+        <PageHeader />
+        <FunAbout />
+        <Contact />
+      </div>
+    </>
   );
 };
 

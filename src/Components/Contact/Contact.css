@@ -1,5 +1,5 @@
 .icons {
-  height: 3em;
+  height: 2.5em;
   border-radius: 50%;
 }
 
@@ -12,28 +12,24 @@
   display: flex;
   align-items:center;
   justify-content: center;
-  position:absolute;
-  bottom: 25px;
+  flex-direction: column;
   left: 50%;
   right:50%;
 }
 
 .contact-header {
-  margin-left: 1em;
   color: rgb(228, 10, 156);
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1em;
   width: max-content;
+  margin: 0em
 }
 
 .icons:hover {
   box-shadow: 0 0 15px 7px  rgb(255, 149, 216);
+  transition: all .2s ease-in-out;
 }
 
-.position-wrapper {
-  position: relative;
-  top: 100px;
-}
 
 .icon-wrapper {
   display: flex;
