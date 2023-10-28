@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import Modal from 'react-modal';
 import sgif from '../../Assets/photos/SuperTicTacToe/example.gif';
 import s1 from '../../Assets/photos/SuperTicTacToe/s1.png';
@@ -35,15 +35,15 @@ const customStyles = {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   content: {
-    backgroundColor: '#EDBAFF',
+    backgroundColor: '#edbaffee',
     color: 'rgb(228, 10, 156)',
     border: '1px solid rgb(228, 10, 156)',
-    boxShadow: '-3px -3px 0px 0px rgb(247, 125, 206)',
     height: '45em',
     width: '55em',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    padding: '2em',
   },
 };
 
@@ -86,7 +86,7 @@ export const Projects = () => {
                     setGameIsOpen(false);
                   }}
                 >
-                  close
+                  Close
                 </button>
                 <h2>Game Night</h2>
                 <Slider {...getSlickSettings()}>
@@ -141,18 +141,23 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
-                <p>Project Information</p>
                 <p>
                   Game Night was my capstone project, completed during my final
                   module at Turing School of Software and Development on a
-                  fullstack team, seven developers - four frontend and three
-                  backend. For my contributions I did the main styling elements,
-                  and was responsible for the entirity of the event details page
-                  and integrating MUI into our application, and countless other
-                  miscellanious tasks. During the 10 days that we were building
-                  Game Night I put about 80 hours of work into it. Upon
-                  completion our peers in our cohort selected Game Night to go
-                  to Turing's Demo Competition.
+                  fullstack team of seven developers - four front-end and three
+                  back-end. For my contributions I did the main styling
+                  elements, and was responsible for the entirity of the event
+                  details page and integrating MUI into our application, and
+                  many other miscellanious tasks. During the 10 days that we
+                  were building Game Night I put about 80 hours of work into it.
+                  Upon completion our peers in our cohort selected Game Night to
+                  go to Turing's bimonthly Demo Competition, where we placed
+                  3rd.
+                </p>
+                <p>
+                  As a side note due to using a free back end hosting service it
+                  takes a while for the page to load when you first navigate to
+                  it.
                 </p>
               </Modal>
             </div>
@@ -218,7 +223,7 @@ export const Projects = () => {
                   <a
                     className="critter"
                     href="https://github.com/asutherland91/CritterCompanion"
-                    target="_blank"
+                    target="_blan"
                     rel="noreferrer"
                   >
                     GitHub
@@ -232,6 +237,19 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
+                <p>
+                  Citter Companion was my final project of my third module at
+                  Turing. This project was done solo. During this module I
+                  learned how to use React and end to end testing for the first
+                  time. The premise of this project was to make something that
+                  could appeal to a niche audience and so I made an application
+                  meant to help people who play Animal Crossing New Horizons
+                  track all of the critters that can be caught in the game. This
+                  project was done over the course of 5 days. Unfortunately
+                  sometime after turing this project in the original API I used
+                  was removed, but I did manage to find a replacment and update
+                  my page so that it would continue working.
+                </p>
               </Modal>
             </div>
             <img
@@ -325,6 +343,15 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
+                <p>
+                  Bootleg Barkeep was a group project in my third module at
+                  Turing. In this project we were challanged to learn something
+                  that we have never touched before and use it in our
+                  application. For this challange we chose TypeScript. Over a
+                  period of a week we learned how to use TypeScript and also
+                  built this project. For my contributions I did the entire
+                  drink grid, and various other tasks.{' '}
+                </p>
               </Modal>
             </div>
             <img
@@ -423,6 +450,14 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
+                <p>
+                  Super Tic-Tac-Toe was my final project from my first module at
+                  Turing. In this project we were required to build a basic game
+                  of tic tac toe. I did several extensions in being able to
+                  enter in a name, select a token and also have local storage
+                  associated with the name entered in. This project was where I
+                  really realized that I love UI/UX and could have fun with it.
+                </p>
               </Modal>
             </div>
             <img
@@ -439,4 +474,3 @@ export const Projects = () => {
     </div>
   );
 };
-
