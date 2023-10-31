@@ -25,3 +25,13 @@
 .dark .fun-about-text, .dark .fun-about-header  {
   color:rgb(247, 125, 206);
 }
+@media (max-width: 1440px) {
+  .fun-about-page-wrapper {
+    height: 75vh;
+    margin: 0em;
+  }
+
+  .fun-about-text-wrapper {
+    margin-bottom: 1em;
+  }
+}

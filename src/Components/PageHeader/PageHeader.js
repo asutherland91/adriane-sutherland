@@ -22,7 +22,7 @@ export const PageHeader = () => {
           </a>
           <span className="decorative-line"> / </span>
           <a href="#fun" className="header-text">
-            More About Me!
+            More
           </a>
         </div>
         <DarkModeToggle />
