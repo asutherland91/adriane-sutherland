@@ -35,3 +35,29 @@
 .dark .about-text, .dark .about-header  {
   color:rgb(247, 125, 206);
 }
+
+@media (max-width: 768px) {
+  .about-text-wrapper {
+    width: 10em;
+  }
+  .about-image {
+    margin-right: 0;
+    height:10em; 
+  }
+  .about-text {
+    font-size: 1em;
+    width: 100%
+  }
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .about-text-wrapper {
+    width: 50%;
+  }
+  .about-page-wrapper {
+    height: 80vh;
+  }
+}

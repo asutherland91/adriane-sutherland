@@ -98,3 +98,48 @@ color: rgb(247, 125, 206);
 .project-right, .project-left {
   margin-bottom: 1.5em;
 }
+
+@media (max-width: 768px) {
+  .project-content-wrapper {
+    margin-left: 0;
+  }
+  .display-image {
+    height: 6em;
+    box-shadow: -10px -10px 0px 0px rgb(228, 10, 156)
+  }
+  .project-header,
+  .app-name {
+    text-align: center;
+  }
+  .modal-button {
+    font-size: 0.75em;
+  }
+  .modal-slides {
+    height: 10em;
+  }
+  .navigation-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dark .display-image {
+    box-shadow: -10px -10px 0px 0px rgb(247, 125, 206);
+    }
+}
+
+
+@media (max-width: 1440px) {
+  .project-page-wrapper {
+    height: 75vh;
+  } 
+  .display-image {
+    height: 10em;
+    margin-bottom: 1em;
+    box-shadow: -15px -15px 0px 0px rgb(228, 10, 156)
+  }
+  .app-name {
+    margin: 1em 0em 1.25em 0em;
+  }
+  .project-left, .project-right {
+    margin-bottom: 1em;
+  }
+}
