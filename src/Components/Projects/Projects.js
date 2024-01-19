@@ -32,18 +32,10 @@ import './Projects.css';
 
 const customStyles = {
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    className: 'modal-overlay', 
   },
   content: {
-    backgroundColor: '#edbaffee',
-    color: 'rgb(228, 10, 156)',
-    border: '1px solid rgb(228, 10, 156)',
-    height: '45em',
-    width: '55em',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    padding: '2em',
+    className: 'modal-content', 
   },
 };
 
@@ -79,6 +71,8 @@ export const Projects = () => {
                 }}
                 style={customStyles}
                 contentLabel="Game Modal"
+                className={"modal-content"}
+                overlayClassName={"modal-overlay"}
               >
                 <button
                   className="modal-button"
@@ -88,7 +82,7 @@ export const Projects = () => {
                 >
                   Close
                 </button>
-                <h2>Game Night</h2>
+                <h2 className="project-title">Game Night</h2>
                 <Slider {...getSlickSettings()}>
                   <div className="slick-slide">
                     <img className="modal-slides" src={g1} alt="Game Night 1" />
@@ -141,7 +135,7 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
-                <p>
+                <p className="description-text">
                   Game Night was my capstone project, completed during my final
                   module at Turing School of Software and Development on a
                   fullstack team of seven developers - four front-end and three
@@ -154,7 +148,7 @@ export const Projects = () => {
                   go to Turing's bimonthly Demo Competition, where we placed
                   3rd.
                 </p>
-                <p>
+                <p className="description-text">
                   As a side note due to using a free back end hosting service it
                   takes a while for the page to load when you first navigate to
                   it.
@@ -179,6 +173,8 @@ export const Projects = () => {
                 }}
                 style={customStyles}
                 contentLabel="Critter Modal"
+                className={"modal-content"}
+                overlayClassName={"modal-overlay"}
               >
                 <button
                   className="modal-button"
@@ -237,7 +233,7 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
-                <p>
+                <p className="description-text">
                   Citter Companion was my final project of my third module at
                   Turing. This project was done solo. During this module I
                   learned how to use React and end to end testing for the first
@@ -271,6 +267,8 @@ export const Projects = () => {
                 }}
                 style={customStyles}
                 contentLabel="bootleg Modal"
+                className={"modal-content"}
+                overlayClassName={"modal-overlay"}
               >
                 <button
                   className="modal-button"
@@ -343,7 +341,7 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
-                <p>
+                <p className="description-text">
                   Bootleg Barkeep was a group project in my third module at
                   Turing. In this project we were challanged to learn something
                   that we have never touched before and use it in our
@@ -371,6 +369,8 @@ export const Projects = () => {
                 }}
                 style={customStyles}
                 contentLabel="Tictactoe Modal"
+                className={"modal-content"}
+                overlayClassName={"modal-overlay"}
               >
                 <button
                   className="modal-button"
@@ -450,7 +450,7 @@ export const Projects = () => {
                     Deployed Site
                   </a>
                 </div>
-                <p>
+                <p className="description-text">
                   Super Tic-Tac-Toe was my final project from my first module at
                   Turing. In this project we were required to build a basic game
                   of tic tac toe. I did several extensions in being able to

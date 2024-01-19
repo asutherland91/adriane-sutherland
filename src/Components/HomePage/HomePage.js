@@ -14,7 +14,7 @@ export const HomePage = () => {
             <img
           className="landing-image"
           src={artsy}
-          alt="artistic portrait of Adriane"
+          alt="Photo of me at the Musuem of Illusions in Las Vegas"
         />
           </div>
     </div>

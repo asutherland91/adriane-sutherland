@@ -5,8 +5,8 @@ cursor: pointer;
 margin-bottom: 2em;
 }
 
-.project-page-wrapper {
-  height: 100vh;
+.projects-page-wrapper {
+  height: 75vh;
 }
 
 .display-image:hover {
@@ -76,13 +76,20 @@ color: rgb(247, 125, 206);
 }
 
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  background-color: rgba(23, 136, 235, 0);
+}
+
+.modal-content {
+  background-color: #edbaffee;
+  color: rgb(228, 10, 156);
+  border: 1px solid rgb(228, 10, 156);
+  height: 45em;
+  width: 55em;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
 }
 
 .game, .critter, .bootleg, .tac {
@@ -97,33 +104,6 @@ color: rgb(247, 125, 206);
 
 .project-right, .project-left {
   margin-bottom: 1.5em;
-}
-
-@media (max-width: 768px) {
-  .project-content-wrapper {
-    margin-left: 0;
-  }
-  .display-image {
-    height: 6em;
-    box-shadow: -10px -10px 0px 0px rgb(228, 10, 156)
-  }
-  .project-header,
-  .app-name {
-    text-align: center;
-  }
-  .modal-button {
-    font-size: 0.75em;
-  }
-  .modal-slides {
-    height: 10em;
-  }
-  .navigation-links {
-    flex-direction: column;
-    align-items: center;
-  }
-  .dark .display-image {
-    box-shadow: -10px -10px 0px 0px rgb(247, 125, 206);
-    }
 }
 
 
@@ -143,3 +123,47 @@ color: rgb(247, 125, 206);
     margin-bottom: 1em;
   }
 }
+
+@media (max-width: 768px) {
+  .project-content-wrapper {
+    margin-left: 0;
+  }
+  .project-header {
+    margin: .25em;
+    font-size: 1.75em;
+  }
+  .project-title {
+    margin: .5em;
+  }
+  .description-text {
+    margin: .25em;
+  }
+  .display-image {
+    height: 6em;
+    box-shadow: -10px -10px 0px 0px rgb(228, 10, 156)
+  }
+  .project-header,
+  .app-name {
+    text-align: center;
+  }
+  .modal-button {
+    font-size: 0.75em;
+  }
+  .modal-slides {
+    height: 13em;
+    margin-bottom: .25em;
+  }
+  .modal-content {
+    height: 60vh;
+    width: 80vw;
+    position:fixed;
+    padding: 2em;
+  }
+  .navigation-links {
+    align-items: center;
+  }
+  .dark .display-image {
+    box-shadow: -10px -10px 0px 0px rgb(247, 125, 206);
+    }
+}
+
