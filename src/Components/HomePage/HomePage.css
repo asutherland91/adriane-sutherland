@@ -1,7 +1,7 @@
 .home-title-wrapper {
   display: flex;
   align-items: baseline;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -21,14 +21,15 @@
 
 .home-welcome {
   color: rgb(228, 10, 156);
-  font-family: cursive;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0 0.25em;
 }
 
 .animate-character {
+  margin-top: 0;
   margin-left: 10em;
   font-size: 2.75em;
-  font-family: cursive;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --bg-size: 400%;
   --color-one: rgb(228, 10, 156);
   --color-two: rgb(247, 125, 206);
@@ -104,34 +105,6 @@
   color: rgb(247, 125, 206);
 }
 
-@media (max-width: 768px) {
-  .home-title-wrapper {
-    flex-direction: column;
-  }
-  .home-page-wrapper {
-    justify-content:space-around;
-    flex-direction: column;
-    height: 42em;
-  }
-  .home-welcome {
-    font-size: 2.25em;
-  }
-  .home-image {
-    margin-right: 0;
-    height: 10em;
-  }
-  .animate-character {
-    margin-left: 0;
-    font-size: 2em;
-  }
-  .landing-wrapper {
-    height: 10em;
-  }
-  .landing-image {
-    height: 15em;
-  }
-}
-
 @media (max-width: 1440px) {
   .home-title-wrapper {
     
@@ -152,3 +125,33 @@
     height: 26em;
   }
 }
+
+@media (max-width: 768px) {
+  .home-title-wrapper {
+    flex-direction: column;
+  }
+  .home-page-wrapper {
+    justify-content:space-evenly;
+    flex-direction: column;
+    margin: .5em;
+    max-height: 75vh;
+  }
+  .home-welcome {
+    font-size: 2.25em;
+  }
+  .home-image {
+    margin-right: 0;
+    height: 10em;
+  }
+  .animate-character {
+    margin-left: 0;
+    font-size: 2em;
+  }
+  .landing-wrapper {
+    height: 10em;
+  }
+  .landing-image {
+    height: 20em;
+  }
+}
+
