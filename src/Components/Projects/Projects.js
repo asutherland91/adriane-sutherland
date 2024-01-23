@@ -343,7 +343,7 @@ export const Projects = () => {
                 </div>
                 <p className="description-text">
                   Bootleg Barkeep was a group project in my third module at
-                  Turing. In this project we were challanged to learn something
+                  Turing. In this project we were challenged to learn something
                   that we have never touched before and use it in our
                   application. For this challange we chose TypeScript. Over a
                   period of a week we learned how to use TypeScript and also
